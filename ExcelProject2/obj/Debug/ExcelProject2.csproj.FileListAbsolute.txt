@@ -1,0 +1,11 @@
+C:\Users\YPN-1255\source\repos\ExcelProject2\ExcelProject2\bin\Debug\ExcelProject2.exe.config
+C:\Users\YPN-1255\source\repos\ExcelProject2\ExcelProject2\bin\Debug\ExcelProject2.exe
+C:\Users\YPN-1255\source\repos\ExcelProject2\ExcelProject2\bin\Debug\ExcelProject2.pdb
+C:\Users\YPN-1255\source\repos\ExcelProject2\ExcelProject2\obj\Debug\ExcelProject2.csproj.AssemblyReference.cache
+C:\Users\YPN-1255\source\repos\ExcelProject2\ExcelProject2\obj\Debug\ExcelProject2.csproj.ResolveComReference.cache
+C:\Users\YPN-1255\source\repos\ExcelProject2\ExcelProject2\obj\Debug\ExcelProject2.Form1.resources
+C:\Users\YPN-1255\source\repos\ExcelProject2\ExcelProject2\obj\Debug\ExcelProject2.Properties.Resources.resources
+C:\Users\YPN-1255\source\repos\ExcelProject2\ExcelProject2\obj\Debug\ExcelProject2.csproj.GenerateResource.cache
+C:\Users\YPN-1255\source\repos\ExcelProject2\ExcelProject2\obj\Debug\ExcelProject2.csproj.CoreCompileInputs.cache
+C:\Users\YPN-1255\source\repos\ExcelProject2\ExcelProject2\obj\Debug\ExcelProject2.exe
+C:\Users\YPN-1255\source\repos\ExcelProject2\ExcelProject2\obj\Debug\ExcelProject2.pdb
