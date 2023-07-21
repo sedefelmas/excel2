@@ -20,23 +20,33 @@ namespace ExcelProject2
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Excel.Application xlApp = new Excel.Application();
-            Excel.Workbook xlWorkbook = xlApp.Workbooks.Open(@"C:\\Users\\YPN-1255\\Documents\\Book1.xlsx");
-            Excel._Worksheet xlWorksheet = xlWorkbook.Sheets[1];
-            Excel.Range xlRange = xlWorksheet.UsedRange;
+            string strFilePath = string.Empty;
 
-            int rowCount = xlRange.Rows.Count;
-            int colCount = xlRange.Columns.Count;
+            openFileDialog1.InitialDirectory = Application.StartupPath;
+            openFileDialog1.FileName = "*.xlsx";
+            openFileDialog1.Filter = "xlsx files (*.xlsx)|*.xlsx|All files (*.*)|*.*";
 
-            //iterate over the rows and columns and print to the console as it appears in the file
-            //excel is not zero based!!
-            for (int i = 1; i <= rowCount; i++)
+            if (openFileDialog1.ShowDialog() == DialogResult.OK)
             {
-                for (int j = 1; j <= colCount; j++)
+                strFilePath = openFileDialog1.FileName;
+                Excel.Application xlApp = new Excel.Application();
+                Excel.Workbook xlWorkbook = xlApp.Workbooks.Open(strFilePath);
+                Excel._Worksheet xlWorksheet = xlWorkbook.Sheets[1];
+                Excel.Range xlRange = xlWorksheet.UsedRange;
+
+                int rowCount = xlRange.Rows.Count;
+                int colCount = xlRange.Columns.Count;
+
+                //iterate over the rows and columns and print to the console as it appears in the file
+                //excel is not zero based!!
+                for (int i = 1; i <= rowCount; i++)
                 {
-                    //write the value to the console
-                    if (xlRange.Cells[j, i] != null && xlRange.Cells[j, i].Value2 != null)
-                        listBox1.Items.Add(xlRange.Cells[j, i].Value2.ToString());
+                    for (int j = 1; j <= colCount; j++)
+                    {
+                        //write the value to the console
+                        if (xlRange.Cells[i, j] != null && xlRange.Cells[i, j].Value2 != null)
+                            listBox1.Items.Add(xlRange.Cells[i, j].Value2.ToString());
+                    }
                 }
             }
         }

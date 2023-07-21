@@ -31,6 +31,7 @@ namespace ExcelProject2
         {
             this.button1 = new System.Windows.Forms.Button();
             this.listBox1 = new System.Windows.Forms.ListBox();
+            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.SuspendLayout();
             // 
             // button1
@@ -52,6 +53,10 @@ namespace ExcelProject2
             this.listBox1.Size = new System.Drawing.Size(360, 420);
             this.listBox1.TabIndex = 1;
             // 
+            // openFileDialog1
+            // 
+            this.openFileDialog1.FileName = "openFileDialog1";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -69,6 +74,7 @@ namespace ExcelProject2
 
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.ListBox listBox1;
+        private System.Windows.Forms.OpenFileDialog openFileDialog1;
     }
 }
 
